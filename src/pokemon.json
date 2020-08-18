@@ -3,24 +3,19 @@
     "id": 1,
     "name": "Bulbasaur",
     "image":
-      "https://vignette.wikia.nocookie.net/pokemon-talk6406/images/4/43/Bulbasaur.png/revision/latest?cb=20170506185349",
-    "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea"
+      "https://vignette.wikia.nocookie.net/pokemon-talk6406/images/4/43/Bulbasaur.png/revision/latest?cb=20170506185349"
   },
   {
     "id": 2,
     "name": "Charmander",
     "image":
-      "https://cdn.imgbin.com/1/14/12/imgbin-pok-mon-x-and-y-pok-mon-go-charmander-bulbasaur-pokemon-pokemon-charmander-illustration-hjUFqdhRRakqWS6LyqZZgdJpx.jpg",
-    "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor"
+      "https://cdn.imgbin.com/1/14/12/imgbin-pok-mon-x-and-y-pok-mon-go-charmander-bulbasaur-pokemon-pokemon-charmander-illustration-hjUFqdhRRakqWS6LyqZZgdJpx.jpg"
+
   },
   {
     "id": 3,
     "name": "Squirtle",
-    "image":
-      "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "occupation": "Cashier",
-    "location": "An Easter Island Head"
+    "image": "https://www.vhv.rs/dpng/d/425-4257086_collection-of-free-squirtle-transparent-character-pokemon-transparent.png"
+    
   }
 ]
