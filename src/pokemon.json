@@ -32,5 +32,15 @@
     "id": 6,
     "name": "Jigglypuff",
     "image": "https://i.pinimg.com/736x/c8/3f/65/c83f653b7a195373d273a3c040471122.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Charizard",
+    "image": "https://static.pokemonpets.com/images/monsters-images-800-800/6-Charizard.png"
+  },
+  {
+    "id": 8,
+    "name": "Mr.Mime",
+    "image": "https://static.pokemonpets.com/images/monsters-images-800-800/122-MrMime.png"
   }
 ]
