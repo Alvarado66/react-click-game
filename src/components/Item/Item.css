@@ -7,3 +7,7 @@
     border-color: black;
     cursor: pointer;
   }
+
+.width {
+  width: 18rem;
+}

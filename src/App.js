@@ -13,48 +13,46 @@ class App extends Component {
     maxScore: 12,
     message: "Choose A Pokemon!",
     messageClass:"",
-    pokemon: pokemon
+    pokemon: pokemon,
+    userChoice: []
   };
-  
-  shuffle = (array) => {
+
+  countHandler = () => {
+     const newScore = this.state.score + 1 
+      this.setState({score: newScore})
+
+      if(newScore >= this.state.topScore) {
+        this.setState({topScore: newScore})
+      }
     
-    let currentIndex = array.length;
-    let temporaryValue;
-    let randomIndex;
-  
-    while (0 !== currentIndex) {
-  
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+  }
+
+  clickHandler = (event) => {
+    this.shuffle(this.state.pokemon)
+    if(this.state.userChoice.indexOf(event) === -1)  {
+      this.countHandler()
+
+      this.setState({userChoice: this.state.userChoice.concat(event)})
+
     }
-    return array;
-  
+    else {
+      this.gameOver()
+    }
+  }
+
+  gameOver = () => {
+    this.setState({score: 0, message: "Sorry Trainer, You Lost!"})
+  }
+
+   shuffle = (array) => {
+    array.sort(() => Math.random() - 0.5);
+  }
+
+  componentDidMount() {
+    this.shuffle(this.state.pokemon)
   }
   
-  correctChoice = () => {
-  
-    if (this.state.score + 1 > this.state.topScore) {
-      this.setState({topScore: this.state.topScore + 1})
-    }
-    if (this.state.score + 1 === this.state.maxScore) {
-      this.setState({score: this.state.score + 1, message: "You win", messageClass: "Correct"})
-    } else {
-      this.setState({score: this.state.score + 1, message: "You guessed correctly", messageClass: "Correct"})
-    }
-  
-  } 
-  
-  wrongChoice = () => {
-  
-    this.setState({score: 0, message: "You guessed incorrectly!"})
-    const updatedCharacters = this.state.pokemon.map(ch => ch.isClicked === (true) ? { ...ch, isClicked: false } : ch)
-    return updatedCharacters
-  
-  }
+
   
   winReset = (correctCharacters) => {
   
@@ -72,7 +70,7 @@ class App extends Component {
   randomizeCharacters = (name) => {
   
     var resetNeeded = false;
-    const characters = this.state.pokemon.map(ch => {
+    const pokemon = this.state.pokemon.map(ch => {
   
       if(ch.name === name) {
         if (ch.isClicked === false) {
@@ -93,6 +91,7 @@ class App extends Component {
       
     } else {
       this.setState({ pokemon: this.shuffle(this.winReset(pokemon)) })
+
     }
     
   } 
@@ -104,7 +103,7 @@ class App extends Component {
               image={pokemon.image} 
               name={pokemon.name} 
               key={pokemon.id} 
-              onClick={this.randomizeCharacters} 
+              onClick={this.clickHandler} 
             />
   
           ))
