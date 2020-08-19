@@ -8,14 +8,13 @@
   {
     "id": 2,
     "name": "Charmander",
-    "image":
-      "https://cdn.imgbin.com/1/14/12/imgbin-pok-mon-x-and-y-pok-mon-go-charmander-bulbasaur-pokemon-pokemon-charmander-illustration-hjUFqdhRRakqWS6LyqZZgdJpx.jpg"
+    "image": "https://vignette.wikia.nocookie.net/sonicpokemon/images/e/e0/Charmander_AG_anime.png/revision/latest?cb=20130714191911"
 
   },
   {
     "id": 3,
     "name": "Squirtle",
-    "image": "https://www.vhv.rs/dpng/d/425-4257086_collection-of-free-squirtle-transparent-character-pokemon-transparent.png"
+    "image": "https://2.bp.blogspot.com/-atzUuc_vK_Y/VuYP0hNemgI/AAAAAAAAF8s/3G9YSKC439k3x14QbuWOcvXJVEMxaFZbA/s1600/Squirtle.PNG"
     
   },
   {
@@ -31,7 +30,7 @@
   {
     "id": 6,
     "name": "Jigglypuff",
-    "image": "https://i.pinimg.com/736x/c8/3f/65/c83f653b7a195373d273a3c040471122.jpg"
+    "image": "https://static.pokemonpets.com/images/monsters-images-800-800/39-Jigglypuff.png"
   },
   {
     "id": 7,
