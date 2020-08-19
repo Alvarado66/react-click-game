@@ -112,7 +112,8 @@ class App extends Component {
   render () {
   
     return (
-      <div className="App">
+      <div className="App container-fluid">
+      <Header />
         <Navbar
           score={this.state.score}
           topscore={this.state.topScore}
@@ -120,8 +121,7 @@ class App extends Component {
           messageClass={this.state.messageClass}
         />
   
-        <Header />
-        <div className="content">
+        <div className="content row">
           {this.renderCharacter()}
         </div>
       </div>

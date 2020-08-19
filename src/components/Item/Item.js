@@ -4,7 +4,7 @@ import "./Item.css";
 const Item = ({ name, image, onClick }) => {
 
   return (
-    <div className="card width">
+    <div className="card width col-3 align-items-center">
       <img
         className="click-item img-fluid card-img-top"
         src={image}
@@ -12,7 +12,7 @@ const Item = ({ name, image, onClick }) => {
         name={name}
         onClick={() => onClick(name)}
 
-      />;
+      />
 
     </div>
   )
